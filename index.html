@@ -3,10 +3,16 @@
   <head>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <!-- font links -->
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700" rel="stylesheet">
+
     <title> Richard Wei </title>
     <!-- necessary component for materialize grid -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,73 +20,42 @@
   </head>
   <!-- the real content -->
   <body>
+    <!-- row at top for buttons -->
+    <div class="header-row">
+      <h1>Portfolio</h1>
+      <h1>Portfolio</h1>
+      <h1>Portfolio</h1>
+      <h1>Portfolio</h1>
+    </div>
 
-    <div class="container">
-      <!-- for the navbar
-      <ul id="navbar" class="side-nav fixed">
-        <center>
-          <a href="#"><img id="profile" src="images/myface.jpg"/></a>
-          <li><a href="#"> Projects </a></li>
-          <li><a href="#"> Portfolio </a></li>
-          <li><a href="#"> About me </a></li>
-          <li><a href="#"> Contact me </a></li>
-        </center>
-      </ul>
-      -->
 
-      <!-- shitty navbar, no need for an actual navbar-->
-      <div class="row pseudo-nav">
-        <center>
-          <div class="col s6 m3">
-            <a href="#" class="nav-options"> ABOUT ME </a>
-          </div>
-          <div class="col s6 m3">
-            <a href="#" class="nav-options"> PORTFOLIO </a>
-          </div>
-          <div class="col s6 m3">
-            <a href="#" class="nav-options"> RESUME </a>
-          </div>
-          <div class="col s6 m3">
-            <a href="#" class="nav-options"> CONTACT ME </a>
-          </div>
-        </center>
-      </div>
-
-      <div class="row content-row">
-        <!-- left side - text info -->
-        <div id="self" class="col m4 s12">
-          <h4> Richard Wei </h4>
-          <h5> Comp Sci + Visual Arts </h5>
-          <p>
-            I'm currently a second year computer science student at the University of
-            Toronto Scaborough campus. I'm in the specialist software engineering
-            stream and will be having my first work term for coop in winter :^)
-          </p>
-          <p>
-            I usually fequent these sites
-          </p>
-          <!-- links to profiles on other websites -->
-          <div class="icon-panel">
-            <a href="https://github.com/13ABEL">
-              <img class="responsive-img" src="images/icons/git.png" />
-              <p> @13abel </p>
-            </a>
-            <a href="https://www.behance.net/boiledbuns">
-              <img class="responsive-img" src="images/icons/behance.png" />
-              <p> @boiledbuns </p>
-            </a>
-            <a ref="https://www.instagram.com/therichardwei">
-              <img class="responsive-img" src="images/icons/instagram.png"/>
-              <p> @therichardwei </p>
-            </a>
-          </div>
-        </div>
-
+    <div class="flexbox">
+      <!-- image -->
+      <div class="left-container">
 
 
       </div>
 
-    <!-- end of the container -->
+      <!-- Information -->
+      <div class="right-container">
+        <h1>Hi! I'm <br><span>Richard </span></h1>
+
+        <p>
+           I'm a second year computer science student at the University of Toronto
+           Scarborough. I'm always looking for ways to integrate my background in
+           visual arts with my current studies! I'll be on work term during the
+           2018 winter and summer terms!
+        </p>
+        <ul>
+          <li>Behance</li>
+          <li>Github</li>
+          <li>Github</li>
+
+        </ul>
+      </div>
+
+
+
     </div>
 
   </body>
