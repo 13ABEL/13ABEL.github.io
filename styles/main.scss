@@ -1,7 +1,13 @@
+$base-font: 10px;
+
 html {
   width: 100%;
   height: 100%;
-  font-size: 16px;
+  font-size: $base-font;
+
+  @media only screen and (max-width: 1063px) {
+    font-size: $base-font*2;
+  }
 
   body {
     margin: inherit;
@@ -19,8 +25,11 @@ html {
 .left-container {
   width: 50%;
   text-align: right;
-
   padding-top: 40px;
+
+  @media only screen and (max-width: 1063px) {
+    width: 0;
+  }
 
   /* left image*/
   & > img{
@@ -29,16 +38,40 @@ html {
 
     margin-right: 20%;
     transform: rotate(5deg);
+
+    @media only screen and (max-width: 1063px) {
+      width: 0;
+    }
   }
 }
 
 .right-container {
   width: 50%;
   padding-top: 60px;
+  font-size: 1em;
 
-  & > h1 > span {
-    margin-left: 20px;
-    font-size: 50px;
+  /* for mobile screens */
+  @media only screen and (max-width: 1063px) {
+    width: 100%;
+    padding-left: 10%;
+  }
+
+  & > h1{
+    margin: 50px 0 0 0;
+
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 7em;
+    letter-spacing: 2px;
+    font-weight: 700;
+
+    & > span {
+      margin-left: 20px;
+      font-size: 20px ;
+
+      @media only screen and (max-width: 1063px) {
+        display: none;
+      }
+    }
   }
 
   & > h3 {
@@ -46,10 +79,8 @@ html {
     padding: 0;
 
     font-family: 'Open Sans Condensed', sans-serif;
-
     letter-spacing: 0px;
-
-    font-size: 32px;
+    font-size: 3.2em;
     font-weight: 600;
 
     & > a {
@@ -58,10 +89,10 @@ html {
   }
 
   & > p {
-    width: 70%;
+    width: 75%;
     font-family: 'Playfair Display', serif;
 
-    font-size: 18px;
+    font-size: 1.8em;
     letter-spacing: 0px;
     font-weight: 500;
 
@@ -75,46 +106,40 @@ html {
 
     margin-bottom: 8px;
   }
-
-
 }
 
 .header-row {
   text-align: left;
+  font-size: 1em;
+
+
+  & h1 {
+    display: inline-block;
+    margin-right: 4em;
+
+    padding: 8px 20px 8px 20px;
+
+    border-radius:50px;
+    background-color: red;
+    color: white;
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    @media only screen and (max-width: 1063px) {
+      font-size: 2em;
+      margin-right: 2.5em;
+      padding: 0.2em 0.7em 0.2em 0.7em;
+    }
+
+    & > a {
+      text-decoration: none;
+    }
+  }
 }
-
-.header-row h1 {
-  display: inline-block;
-  margin-right: 40px;
-  padding: 8px 20px 8px 20px;
-
-  border-radius:50px;
-  background-color: red;
-  color: white;
-
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.header-row h1 > a {
-  text-decoration: none;
-}
-
-
-
-.right-container > h1{
-  margin: 50px 0 0 0;
-
-  font-family: 'Playfair Display', sans-serif;
-  font-size: 70px;
-  letter-spacing: 2px;
-  font-weight: 700;
-}
-
-
 
 .account-links > li:nth-child(1)::before {
   color: white;
