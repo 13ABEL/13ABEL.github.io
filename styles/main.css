@@ -49,7 +49,7 @@ html {
     font-weight: 700; }
     .right-container > h1 > span {
       margin-left: 20px;
-      font-size: 20px; }
+      font-size: 50px; }
       @media only screen and (max-width: 1063px) {
         .right-container > h1 > span {
           display: none; } }
