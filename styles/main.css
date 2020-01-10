@@ -21,26 +21,27 @@
 html {
   background-color: #073642;
   font-family: 'Inconsolata', monospace;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 h1 {
-  font-size: 30px;
-  color: #cb4b16;
-}
-
-a {
-  color: #859900;
+  font-size: 150%;
+  /* color: #cb4b16;
+  color: #b58900; */
+  font-weight: normal;
 }
 
 #container {
   width : 50%;
-  margin: 5rem auto auto auto;
+  margin: 5rem auto 5rem auto;
   padding : 1rem 2rem 1rem 2rem;
   background-color: #002b36;
   color: #657b83;
 }
 
+.emphasis {
+  color: #268bd2;
+}
 
 .underline {
   text-decoration: underline;
@@ -48,4 +49,37 @@ a {
 
 .bold {
   font-weight: bold;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.tab {
+  color: #859900;
+  margin-right: 20px;
+}
+
+.me {
+  color: #b58900;
+  color: #cb4b16;
+}
+
+.hobby-container {
+  margin-top: 40px;
+  font-style: normal;
+}
+
+.hobby-container-title {
+  color: #6c71c4;
+}
+
+.hobby-title {
+  color: #d33682;
+  padding-right: 40px;
+}
+
+.hobby-body {
+  text-align: left;
+  padding-bottom:  10px;
 }
