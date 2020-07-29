@@ -18,10 +18,13 @@
   $green:     #859900;
 */
 
+
+
+
+
 html {
   background-color: white;
   font-family: 'Inconsolata', monospace;
-  font-size: 20px;
 }
 
 h1 {
@@ -30,7 +33,6 @@ h1 {
   color: #b58900; */
   font-weight: normal;
 }
-
 
 #container {
   width : 50%;
@@ -89,4 +91,31 @@ h1 {
 .hobby-body {
   text-align: left;
   padding-bottom:  10px;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  #profile {
+    height: 6rem;
+  }
+
+  #container {
+    width : 85%;
+  }
+  .hobby-container {
+    margin-top: 20px;
+  }
+
+  .tab {
+    margin-right: 10px;
+  }
+
+
 }
