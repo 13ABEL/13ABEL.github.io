@@ -18,10 +18,6 @@
   $green:     #859900;
 */
 
-
-
-
-
 html {
   background-color: white;
   font-family: 'Inconsolata', monospace;
@@ -81,16 +77,23 @@ h1 {
 
 .hobby-container-title {
   color: #6c71c4;
+  margin-bottom: 10px;
+}
+
+.hobby-row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .hobby-title {
   color: #d33682;
-  padding-right: 40px;
+  flex: 20%;
+  min-width: 8rem;
 }
 
 .hobby-body {
-  text-align: left;
-  padding-bottom:  10px;
+  padding-bottom: 10px;
+  flex: 80%;
 }
 
 @media screen and (max-width: 600px) {
@@ -116,6 +119,4 @@ h1 {
   .tab {
     margin-right: 10px;
   }
-
-
 }
